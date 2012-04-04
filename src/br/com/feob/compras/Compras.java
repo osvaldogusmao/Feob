@@ -6,6 +6,9 @@ import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.Normalizer.Form;
+import java.text.NumberFormat;
+import java.util.Formatter;
 
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
@@ -240,7 +243,7 @@ public class Compras extends JFrame {
 				if(totalDaCompra > 0){
 
 					JOptionPane.showMessageDialog(null, produtosComprados + "\n" +
-														"Valor da compra : R$ "+totalDaCompra, "Simulador de compras", JOptionPane.INFORMATION_MESSAGE);
+														"Valor da compra : R$ "+ totalDaCompra, "Simulador de compras", JOptionPane.INFORMATION_MESSAGE);
 				}else{
 
 					JOptionPane.showMessageDialog(null, "Você não realizou nenhuma compra", "Simulador de compras", JOptionPane.INFORMATION_MESSAGE);
