@@ -19,11 +19,9 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 /**
- * Frame com os componentes para simulação de compras
+ * Frame com os componentes para simulaÔøΩÔøΩo de compras
  * 
  * @author Osvaldo
- * @author Paola
- * @author Lucas
  * 
  * */
 public class Compras extends JFrame {
@@ -40,12 +38,12 @@ public class Compras extends JFrame {
 
 	/**
 	 * 
-	 * Label de descrição dos panel
+	 * Label de descriÔøΩÔøΩo dos panel
 	 * 
 	 * */
 
 	private JLabel lbProdutos = new JLabel("Produtos");
-	private JLabel lbPrecos = new JLabel("Preços", JLabel.RIGHT);
+	private JLabel lbPrecos = new JLabel("PreÔøΩos", JLabel.RIGHT);
 	private JLabel lbQuantidade = new JLabel("Quantidade");
 
 	/**
@@ -55,15 +53,15 @@ public class Compras extends JFrame {
 	 * */
 	private JCheckBox chbRapadura = new JCheckBox("Rapadura", false);
 	private JCheckBox chbInhame = new JCheckBox("Inhame", false);
-	private JCheckBox chbCupuacu = new JCheckBox("Cupuaçu", false);
-	private JCheckBox chbSandalias = new JCheckBox("Sandálias", false);
+	private JCheckBox chbCupuacu = new JCheckBox("CupuaÔøΩu", false);
+	private JCheckBox chbSandalias = new JCheckBox("SandÔøΩlias", false);
 	private JCheckBox chbBolacha = new JCheckBox("Bolacha", false);
-	private JCheckBox chbSabao = new JCheckBox("Sabão", false);
+	private JCheckBox chbSabao = new JCheckBox("SabÔøΩo", false);
 	private JCheckBox chbPinico = new JCheckBox("Pinico", false);
 
 	/**
 	 * 
-	 * Componentes: Label - Preços
+	 * Componentes: Label - PreÔøΩos
 	 * 
 	 * */
 	private String lbCifrao = "R$";
@@ -90,7 +88,7 @@ public class Compras extends JFrame {
 
 	/**
 	 * 
-	 * Componente: Botão - Calcular
+	 * Componente: BotÔøΩo - Calcular
 	 * 
 	 * */
 	private JButton btnCalcular = new JButton("Calcular");
@@ -109,7 +107,7 @@ public class Compras extends JFrame {
 	 * 
 	 * Metodo Construtor
 	 * 
-	 * É o primeiro método a ser chamado quando uma classe é instaciada, ou seja
+	 * ÔøΩ o primeiro mÔøΩtodo a ser chamado quando uma classe ÔøΩ instaciada, ou seja
 	 * criada.
 	 * 
 	 * */
@@ -147,7 +145,7 @@ public class Compras extends JFrame {
 		panelProdutos.add(chbSabao);
 		panelProdutos.add(chbPinico);
 
-		//Layout para o panel Preço
+		//Layout para o panel PreÔøΩo
 		panelPrecos.setLayout(glPrecos);
 		panelPrecos.setBackground(Color.WHITE);
 		
@@ -192,10 +190,10 @@ public class Compras extends JFrame {
 		//Adicionando o panel Mestre ao Frame principal
 		this.add(panelComponentes);
 		
-		//Adicionando o botão calcular no centro do Frame Principal
+		//Adicionando o botÔøΩo calcular no centro do Frame Principal
 		this.add(btnCalcular, JButton.CENTER_ALIGNMENT);
 		
-		//Adicionando o clickEvent no botão calcular
+		//Adicionando o clickEvent no botÔøΩo calcular
 		btnCalcular.addActionListener(new ActionListener() {
 
 			@Override
@@ -246,7 +244,7 @@ public class Compras extends JFrame {
 														"Valor da compra : R$ "+ totalDaCompra, "Simulador de compras", JOptionPane.INFORMATION_MESSAGE);
 				}else{
 
-					JOptionPane.showMessageDialog(null, "Você não realizou nenhuma compra", "Simulador de compras", JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null, "VocÔøΩ nÔøΩo realizou nenhuma compra", "Simulador de compras", JOptionPane.INFORMATION_MESSAGE);
 				}
 				
 			}
